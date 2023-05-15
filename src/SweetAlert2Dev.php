@@ -17,6 +17,7 @@ final class SweetAlert2Dev extends AssetBundle
     public string|null $sourcePath = '@npm/sweetalert2/dist';
     public array $css = ['sweetalert2.css'];
     public array $js = ['sweetalert2.js'];
+    public array $depends = [SweetAlert2::class];
 
     public function __construct()
     {
