@@ -2,19 +2,23 @@
 function sweetAlertClickHandler(event) {
     event.preventDefault();
 
+    const cancelText = event.target.getAttribute('data-cancel-text') || 'Cancel';
+    const confirmText = event.target.getAttribute('data-confirm-text') || 'Accept';
+    const icon = event.target.getAttribute('data-icon') || 'question'; // Valor por defecto: 'question'
     const message = event.target.getAttribute('data-message');
     const method = event.target.getAttribute('data-method') || 'GET'; // Valor por defecto: 'GET'
     const url = event.target.href;
+    const title = event.target.getAttribute('data-title') || 'Confirmation';
 
     Swal.fire(
         {
-            cancelButtonText: 'Cancelar',
-            confirmButtonText: 'Aceptar',
-            icon: 'question',
+            cancelButtonText: cancelText,
+            confirmButtonText: confirmText,
+            icon: icon,
             reverseButtons: true,
             showCancelButton: true,
             text: message,
-            title: 'Confirmación',
+            title: title
         }
     ).then(
         (result) => {
