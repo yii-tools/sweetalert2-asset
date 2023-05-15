@@ -2,6 +2,9 @@
     <a href="https://github.com/yii-tools/template" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/121752654?s=200&v=4" height="100px">
     </a>
+    <a href="https://sweetalert2.github.io/#download" target="_blank">
+        <img src="https://sweetalert2.github.io/images/SweetAlert2.png" height="100px">
+    </a>
     <h1 align="center">Asset SweetAlert2 for YiiFramework v. 3.0.</h1>
     <br>
 </p>
@@ -36,7 +39,7 @@ composer require yii-tools/sweetalert2-asset
 [![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fyii-tools%2Fsweetalert2-asset%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/yii-tools/sweetalert2-asset/main)
 [![static analysis](https://github.com/yii-tools/sweetalert2-asset/actions/workflows/static.yml/badge.svg)](https://github.com/yii-tools/sweetalert2-asset/actions/workflows/static.yml)
 [![type-coverage](https://shepherd.dev/github/yii-tools/sweetalert2-asset/coverage.svg)](https://shepherd.dev/github/yii-tools/sweetalert2-asset)
-[![StyleCI](https://github.styleci.io/repos/494495136/shield?branch=main)](https://github.styleci.io/repos/494495136?branch=main)
+[![StyleCI](https://github.styleci.io/repos/640904082/shield?branch=main)](https://github.styleci.io/repos/640904082?branch=main)
 
 ## License
 
