@@ -25,7 +25,7 @@ composer require yii-tools/sweetalert2-asset
 
 ## Usage
 
-[Check the documentation docs](/docs/readme.md) to learn about usage.
+[Check the documentation docs](/docs/README.md) to learn about usage.
 
 ## Testing
 
