@@ -1,0 +1,8 @@
+{
+    "name": "sweetalert2-asset",
+    "version": "1.0.0",
+    "dependencies": {
+        "sweetalert2": "^11.7.5"
+    },
+    "license": "mit"
+}
