@@ -2,13 +2,13 @@
 function sweetAlertClickHandler(event) {
     event.preventDefault();
 
-    const cancelText = event.target.getAttribute('data-cancel-text') || 'Cancel';
-    const confirmText = event.target.getAttribute('data-confirm-text') || 'Accept';
-    const icon = event.target.getAttribute('data-icon') || 'question'; // Valor por defecto: 'question'
-    const message = event.target.getAttribute('data-message');
-    const method = event.target.getAttribute('data-method') || 'GET'; // Valor por defecto: 'GET'
-    const url = event.target.href;
-    const title = event.target.getAttribute('data-title') || 'Confirmation';
+    const cancelText = event.currentTarget.getAttribute('data-cancel-text') || 'No';
+    const confirmText = event.currentTarget.getAttribute('data-confirm-text') || 'Yes';
+    const icon = event.currentTarget.getAttribute('data-icon') || 'question';
+    const message = event.currentTarget.getAttribute('data-message');
+    const method = event.currentTarget.getAttribute('data-method') || 'GET';
+    const url = event.currentTarget.href;
+    const title = event.currentTarget.getAttribute('data-title') || 'Confirmation';
 
     Swal.fire(
         {
