@@ -45,7 +45,7 @@ function sweetAlertClickHandler(event) {
 }
 
 // Event listener for elements with the data-action attribute
-const elementsWithDataAction = document.querySelectorAll('[data-action]');
+const elementsWithDataAction = document.querySelectorAll('[data-action="sweetAlertClickHandler"]');
 
 elementsWithDataAction.forEach(
     (element) => {
