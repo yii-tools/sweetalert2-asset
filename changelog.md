@@ -3,7 +3,7 @@ Sweet Alert2 Asset Change Log
 
 ## 1.0.1 under development
 
-- no changes in this release.
+- Bug `PR-#8`: Fixed access to `data-` attributes using `event.currentTarget`. (@terabytesoftw)
 
 ## 1.0.0 May 15, 2023
 
