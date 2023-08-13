@@ -3,6 +3,7 @@ function sweetAlertClickHandler(event) {
 
     const cancelText = event.currentTarget.getAttribute('data-cancel-text') || 'No';
     const confirmText = event.currentTarget.getAttribute('data-confirm-text') || 'Yes';
+    const csrfTokenName = event.currentTarget.getAttribute('data-csrf-token-name') || '_csrf';
     const icon = event.currentTarget.getAttribute('data-icon') || 'question';
     const message = event.currentTarget.getAttribute('data-message');
     const method = event.currentTarget.getAttribute('data-method') || 'GET';
@@ -25,7 +26,7 @@ function sweetAlertClickHandler(event) {
 
             if (method.toUpperCase() === 'POST') {
                 // Check if CSRF token is available
-                const csrfTokenElement = document.querySelector('meta[name="csrf"]');
+                const csrfTokenElement = document.querySelector('meta[name="' + csrfTokenName + '"]');
 
                 if (csrfTokenElement) {
                     const csrfToken = csrfTokenElement.getAttribute('content');
